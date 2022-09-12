@@ -32,13 +32,17 @@
 
 <body>
 
-    <div id="root">
+    <div id="root" class="d-flex flex-column align-content-center justify-content-center">
 
-        <h1>{{ message }} VUE!</h1>
+        <h1 class="text-center">{{ message }} VUE!
 
-        <div class="img-container w-25">
-            <img :src="image" class="img-fluid" alt="immagine">
-        </div>
+            <span class="img-container w-25">
+                <img src="https://flagcdn.com/16x12/es.png" srcset="https://flagcdn.com/32x24/es.png 2x,
+                  https://flagcdn.com/48x36/es.png 3x" width="16" height="12" alt="Spagna">
+            </span>
+
+        </h1>
+
 
     </div>
 
