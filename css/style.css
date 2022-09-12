@@ -1,6 +1,8 @@
 #root {
     background-color: aquamarine;
 
+    color: #3535ec;
+
     height: 100vh;
 }
 
@@ -14,4 +16,5 @@ footer {
     align-items: flex-end;
 
     text-align: end;
+    color: black;
 }
