@@ -36,7 +36,14 @@
 
         <div id="messageDiv" class="container d-flex flex-column align-content-center justify-content-center">
 
-            <h1 class="text-center">{{ message }} VUE!
+            <h1 class="text-center d-flex justify-content-center">
+
+                <span class="img-container w-25">
+                    <img :src="image" :srcset="imageSrcSet" width="16" height="12" alt="Spagna">
+                </span>
+
+
+                {{ message }} VUE!
 
                 <span class="img-container w-25">
                     <img :src="image" :srcset="imageSrcSet" width="16" height="12" alt="Spagna">
@@ -47,8 +54,12 @@
         </div>
 
         <footer>
-            <div class="container">
-                <div class="pb-2">Flags imported from <a href="https://www.bandiere-mondo.it/">bandiere-mondo.it</a>
+
+            <div class="container pb-2 d-flex justify-content-between">
+
+                <div class="tr-sign">Created by <a href="https://github.com/Pacciatore">Tommaso Raimondi</a></div>
+
+                <div>Flags imported from <a href="https://www.bandiere-mondo.it/">bandiere-mondo.it</a>
                 </div>
             </div>
         </footer>
