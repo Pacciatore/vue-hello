@@ -32,17 +32,26 @@
 
 <body>
 
-    <div id="root" class="d-flex flex-column align-content-center justify-content-center">
+    <div id="root">
 
-        <h1 class="text-center">{{ message }} VUE!
+        <div id="messageDiv" class="container d-flex flex-column align-content-center justify-content-center">
 
-            <span class="img-container w-25">
-                <img src="https://flagcdn.com/16x12/es.png" srcset="https://flagcdn.com/32x24/es.png 2x,
-                  https://flagcdn.com/48x36/es.png 3x" width="16" height="12" alt="Spagna">
-            </span>
+            <h1 class="text-center">{{ message }} VUE!
 
-        </h1>
+                <span class="img-container w-25">
+                    <img :src="image" :srcset="imageSrcSet" width="16" height="12" alt="Spagna">
+                </span>
 
+            </h1>
+
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="pb-2">Flags imported from <a href="https://www.bandiere-mondo.it/">bandiere-mondo.it</a>
+                </div>
+            </div>
+        </footer>
 
     </div>
 

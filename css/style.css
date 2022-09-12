@@ -1,5 +1,17 @@
 #root {
-    height: 100vh;
-
     background-color: aquamarine;
+
+    height: 100vh;
+}
+
+#messageDiv {
+    height: 80%;
+}
+
+footer {
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+
+    text-align: end;
 }
