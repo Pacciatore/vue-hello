@@ -20,7 +20,8 @@ const app = new Vue({
         message: helloLanguages[0],
         image: `https://flagcdn.com/16x12/${languageFlags[0]}.png`,
         imageSrcSet: `https://flagcdn.com/32x24/${languageFlags[0]}.png 2x,
-        https://flagcdn.com/48x36/${languageFlags[0]}.png 3x`
+        https://flagcdn.com/48x36/${languageFlags[0]}.png 3x`,
+        nationSign: languageFlags[0]
     },
     methods: {
         messageShow: function () {
@@ -28,6 +29,7 @@ const app = new Vue({
             this.image = `https://flagcdn.com/16x12/${languageFlags[languageIndex]}.png`;
             this.imageSrcSet = `https://flagcdn.com/32x24/${languageFlags[languageIndex]}.png 2x,
             https://flagcdn.com/48x36/${languageFlags[languageIndex]}.png 3x`;
+            this.nationSign = languageFlags[languageIndex];
 
 
             console.log(languageIndex, languageFlags[languageIndex], helloLanguages[languageIndex]);
