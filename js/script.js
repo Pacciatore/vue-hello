@@ -31,9 +31,8 @@ const app = new Vue({
 
 
             console.log(languageIndex, languageFlags[languageIndex], helloLanguages[languageIndex]);
-
-            languageIndex === helloLanguages.length ? languageIndex = 0 : '';
             languageIndex++;
+            languageIndex === helloLanguages.length ? languageIndex = 0 : '';
         }
     }
 })
