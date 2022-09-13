@@ -10,7 +10,7 @@ const languageFlags = [
 ];
 
 const helloLanguages = [
-    '¡Hola', 'Ahoj', 'Alo', 'Annyeonghaseyo', 'Ciao', 'Cześć', 'Goeie môre', 'Hallå', 'Hallo', 'Halo', 'Hei', 'Hej', 'Hujambo', 'Konnichiwa', 'Kumusta', 'Marhabaan', 'Merhaba', 'Mingalaba', 'Namaskāra', 'Namasté', 'Nazdar', 'Nín hao', 'Olá', 'Privet', 'Pryvit', 'Salut', 'Shalóm', 'Sveiki', 'S̄wạs̄dī', 'Szia', 'Tālofa', 'Tungjatjeta', 'Xin chào', 'Zdravo', 'Γεια'
+    '¡Hola', 'Ahoj', 'Alo', 'Annyeonghaseyo', 'Ciao', 'Cześć', 'Goeie môre', 'Hallå', 'Hallo', 'Hallo', 'Hallo', 'Halo', 'Hei', 'Hej', 'Hujambo', 'Konnichiwa', 'Kumusta', 'Marhabaan', 'Merhaba', 'Mingalaba', 'Namaskāra', 'Namasté', 'Nazdar', 'Nín hao', 'Olá', 'Privet', 'Pryvit', 'Salut', 'Shalóm', 'Sveiki', 'S̄wạs̄dī', 'Szia', 'Tālofa', 'Tungjatjeta', 'Xin chào', 'Zdravo', 'Zdravo', 'Zdravo', 'Γεια'
 ];
 
 
@@ -29,17 +29,16 @@ const app = new Vue({
             this.imageSrcSet = `https://flagcdn.com/32x24/${languageFlags[languageIndex]}.png 2x,
             https://flagcdn.com/48x36/${languageFlags[languageIndex]}.png 3x`;
 
-            languageIndex++;
 
-            console.log(languageIndex);
+            console.log(languageIndex, languageFlags[languageIndex], helloLanguages[languageIndex]);
 
             languageIndex === helloLanguages.length ? languageIndex = 0 : '';
-
+            languageIndex++;
         }
     }
 })
 
-
+console.log({ languageFlags });
 console.log({ helloLanguages });
 
 setInterval(app.messageShow, timeInterval * 1000);
